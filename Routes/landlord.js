@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const pool = require("../db");
 
-//tested using postman
 //insert
 router.post("/", async (req, res) => {
     try {

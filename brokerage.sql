@@ -1,3 +1,6 @@
+create database brokerage;
+use brokerage;
+
 CREATE TABLE landlord (
     landlord_id int NOT NULL,
     full_name VARCHAR(255) NOT NULL,
