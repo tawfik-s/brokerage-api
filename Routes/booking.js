@@ -37,12 +37,13 @@ router.get("/", async (req, res) => {
     }
 });
 
+
 router.delete("/:id", async (req, res) => {
     try {
 
         await pool.query("DELETE FROM booking WHERE booking_id = ?", [req.params.id]);
 
-        //update the apartment table
+        //update the apartment table to make it free again
 
         res.json("element  is deleted");
     } catch (err) {
